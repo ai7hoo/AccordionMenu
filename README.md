@@ -1,5 +1,6 @@
 # AccordionMenu
 无限级别的竖向折叠菜单
+依赖jquery
 
 ```` javascript
 <script>
