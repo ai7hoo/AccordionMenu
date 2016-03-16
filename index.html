@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="renderer" content="webkit">
+  <title>Document</title>
+  <!-- 加载样式 s -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- 加载样式 s -->
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <div id="left-nav" class="wrap-menu"></div>
+      </div>
+    </div>
+  </div>
+  <script src="scripts/jquery.min.js"></script>
+  <script src="scripts/AccordionMenu.js"></script>
+  <script>
+	  var testMenu = [
+		{
+		  "name": "一级菜单",
+		  "submenu": [
+			{
+			  "name": "二级菜单",
+			  "url": "#/list-a"
+			},
+			{
+			  "name": "二级菜单",
+			  "url": ""
+			}
+		  ]
+		},
+		{
+		  "name": "一级菜单",
+		  "submenu": [
+			{
+			  "name": "二级菜单",
+			  "url": ""
+			},
+			{
+			  "name": "二级菜单",
+			  "submenu": [
+				{
+				  "name": "三级菜单",
+				  "submenu": [
+					{
+					  "name": "四级菜单",
+					  "url": ""
+					}
+				  ]
+				},
+				{
+				  "name": "三级菜单",
+				  "url": ""
+				}
+			  ]
+			},
+			{
+			  "name": "二级菜单",
+			  "url": ""
+			},
+			{
+			  "name": "二级菜单",
+			  "submenu": [
+				{
+				  "name": "三级菜单",
+				  "submenu": [
+					{
+					  "name": "四级菜单",
+					  "url": ""
+					},
+					{
+					  "name": "四级菜单",
+					  "submenu": [
+						{
+						  "name": "五级菜单",
+						  "url": ""
+						},
+						{
+						  "name": "五级菜单",
+						  "url": ""
+						}
+					  ]
+					}
+				  ]
+				},
+				{
+				  "name": "三级菜单",
+				  "url": ""
+				}
+			  ]
+			},
+			{
+			  "name": "二级菜单",
+			  "url": ""
+			}
+		  ]
+		},
+		{
+		  "name": "一级菜单",
+		  "submenu": [
+			{
+			  "name": "二级菜单",
+			  "url": ""
+			},
+			{
+			  "name": "二级菜单",
+			  "url": ""
+			},
+			{
+			  "name": "二级菜单",
+			  "url": ""
+			}
+		  ]
+		}
+	  ];
+	new AccordionMenu({menuArrs:testMenu});
+  </script>
+</body>
+</html>
